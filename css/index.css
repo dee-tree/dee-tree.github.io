@@ -1,0 +1,12 @@
+body {
+}
+
+footer {
+    flex: 1;
+    background-color: #6f6f6f;
+    width: 100%;
+    text-align: center;
+    color: #d3c2de;
+    position: fixed;
+    bottom: 0;
+}
