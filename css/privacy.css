@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    background-color: #d3fff3;
+}
+
+#privacy_body {
+    font-size: 110%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 2px;
+}
+
+#privacy_content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 5% 3% 3% 5%;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li {
+    padding-left: 40px;
+}
+
+footer {
+    flex: 1;
+    background-color: #6f6f6f;
+    min-width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    font-size: 120%;
+}

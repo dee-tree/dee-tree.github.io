@@ -1,12 +1,14 @@
-body {
+body, html {
+    margin: 0;
 }
 
 footer {
     flex: 1;
     background-color: #6f6f6f;
-    width: 100%;
+    min-width: 100%;
     text-align: center;
-    color: #d3c2de;
+    color: #FFFFFF;
     position: fixed;
     bottom: 0;
+    font-size: 120%;
 }
