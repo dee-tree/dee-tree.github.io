@@ -3,6 +3,25 @@ body, html {
     background-color: #d3fff3;
 }
 
+#header {
+    text-align: center;
+    font-size: 42pt;
+    font-family: "cursive";
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#link_header {
+    text-decoration: none;
+}
+
+#code {
+    color: #e20000;
+}
+#mitry {
+    color: #002cbe;
+}
+
 #privacy_body {
     font-size: 110%;
     margin-left: 10%;
@@ -15,6 +34,7 @@ body, html {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 5% 3% 3% 5%;
+    font-family: "Times New Roman", serif ;
 }
 
 ul {
@@ -26,13 +46,40 @@ li {
     padding-left: 40px;
 }
 
-footer {
+#footer {
+    line-height: 50px;
     flex: 1;
-    background-color: #6f6f6f;
+    background-color: #d4d3ff;
     min-width: 100%;
-    text-align: center;
+    height: 50px;
     color: #FFFFFF;
-    position: fixed;
     bottom: 0;
     font-size: 120%;
+    vertical-align: bottom;
+}
+
+#copyright {
+    text-align: center;
+    vertical-align: center;
+}
+
+#privacy {
+    line-height: 1;
+    display: inline-block;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+#privacy:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #FFFFFF;
+    transition: width .3s ease-in-out;
+}
+
+#privacy:hover:after,
+#privacy:focus:after {
+    width: 100%;
 }
