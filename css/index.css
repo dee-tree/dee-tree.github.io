@@ -1,11 +1,9 @@
 body, html {
     width: 100%;
     height: 100%;
-    /*flex-direction: column;*/
     margin: 0;
     padding: 0;
-    background: #9da2e7;
-    background: linear-gradient(to right, #9da2e7, #c2f3ee);
+    background: linear-gradient(to bottom, #FFFFFF, #ffffff, #c7b3ff);
 }
 
 #header {
@@ -16,8 +14,6 @@ body, html {
     font-size: 44pt;
     font-family: "Verdana", "Tahoma", "sans-serif";
     font-weight: bold;
-    background: #9da2e7;
-    background: linear-gradient(to right, #9da2e7, #c2f3ee);
 }
 
 #link_header {
@@ -37,21 +33,6 @@ body, html {
 
 #content {
     flex-grow: 1;
-}
-
-#code {
-    color: #e20000;
-}
-#mitry {
-    color: #002cbe;
-}
-
-hr {
-    alignment: center;
-    min-height: 1px;
-    margin: 1% 1% 1% 1%;
-    background-color: red;
-    border: none;
 }
 
 

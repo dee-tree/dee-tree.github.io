@@ -1,0 +1,17 @@
+#header_img {
+    width: 40%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*does not work */
+@media screen and (max-width: 480px) {
+    #footer_img {
+        width: 100%;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
