@@ -35,24 +35,3 @@ li {
     vertical-align: center;
     margin-right: 50px;
 }
-
-#privacy {
-    display: inline-block;
-    color: #e5e5e5;
-    text-decoration:none;
-    cursor: pointer;
-}
-
-#privacy:after {
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #FFFFFF;
-    transition: width .3s ease-in-out;
-}
-
-#privacy:hover:after,
-#privacy:focus:after {
-    width: 100%;
-}
