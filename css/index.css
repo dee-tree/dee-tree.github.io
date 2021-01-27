@@ -1,45 +1,9 @@
-@font-face {
-    font-family: mono;
-    src: url(../fonts/JetBrainsMono-Medium.ttf);
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #FFFFFF, #ffffff, #c7b3ff);
-}
-
-#header {
-    display: inline-block;
-    top: 0;
-    min-width: 100%;
-    text-align: center;
-    font-size: 44pt;
-    font-family: "Verdana", "Tahoma", "sans-serif";
-    font-weight: bold;
-}
-
 #link_header {
     height: 100px;
     max-height: 100px;
     min-height: 50px;
     text-decoration: none;
 }
-
-
-#wrapper {
-    display: flex;
-    flex-direction: column;
-
-    min-height: 100%;
-}
-
-#content {
-    flex-grow: 1;
-}
-
 
 ul {
     padding-left: 0;
