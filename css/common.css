@@ -3,17 +3,18 @@
     src: url(../fonts/JetBrainsMono-Medium.ttf);
 }
 
+* {
+    font-family: mono, monospace;
+}
+
 #header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     vertical-align: top;
     min-width: 100%;
     padding-top: 0;
     text-align: center;
-    font-size: 44pt;
-    font-family: "Verdana", "Tahoma", "sans-serif";
-    font-weight: bold;
 }
 
 #header a {
@@ -21,7 +22,7 @@
 }
 
 #header_img {
-    width: 40%;
+    width: 30%;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;

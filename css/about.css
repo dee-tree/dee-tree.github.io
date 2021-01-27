@@ -1,0 +1,16 @@
+p.text {
+    line-height: 30px;
+}
+
+#content li {
+    line-height: 30px;
+}
+
+#block {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#block .title {
+    font-size: 18pt
+}
