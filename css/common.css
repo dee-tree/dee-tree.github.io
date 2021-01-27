@@ -1,6 +1,6 @@
 @font-face {
     font-family: mono;
-    src: url(../fonts/JetBrainsMono-Medium.ttf);
+    src: url(../fonts/JetBrainsMono-Medium.ttf) format("truetype");
 }
 
 * {
@@ -8,6 +8,7 @@
 }
 
 #header {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

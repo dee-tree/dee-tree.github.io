@@ -14,3 +14,8 @@ p.text {
 #block .title {
     font-size: 18pt
 }
+
+#horiz_block {
+    display: flex;
+    justify-content: space-between;
+}
