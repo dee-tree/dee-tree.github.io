@@ -21,17 +21,3 @@ ul {
 li {
     padding-left: 40px;
 }
-
-.social-icons {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-right: 10px;
-}
-
-#copyright {
-    text-align: center;
-    vertical-align: center;
-    margin-right: 50px;
-}

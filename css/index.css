@@ -1,23 +1,9 @@
-ul {
-    padding-left: 0;
-    list-style: none;
-}
+/*ul {*/
+/*    padding-left: 0;*/
+/*    list-style: none;*/
+/*}*/
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-.social-icons {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-right: 10px;
-}
-
-#copyright {
-    text-align: center;
-    vertical-align: center;
-    margin-right: 50px;
-}
+/*li {*/
+/*    display: list-item;*/
+/*    text-align: -webkit-match-parent;*/
+/*}*/
