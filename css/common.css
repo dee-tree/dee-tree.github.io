@@ -66,6 +66,7 @@ html, body {
 #table_of_contents a {
     color: #818181;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #table_of_contents a:after {
@@ -148,4 +149,25 @@ html, body {
     text-align: center;
     vertical-align: center;
     margin-right: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /*background: #c7b3ff*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bda5ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6130ff;
 }
