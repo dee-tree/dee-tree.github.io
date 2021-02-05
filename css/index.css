@@ -2,6 +2,13 @@ p.text {
     line-height: 30px;
 }
 
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 #content li {
     line-height: 30px;
 }
