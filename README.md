@@ -1,7 +1,7 @@
 # Dmitriy Sokolov
 
 ## Website portfolio
-You can find out who I am here.
+You can find out something about me here.
 
 ## How to view
-Go to [Codemitry webpage](https://codemitry.github.io).
+Go to [dee-tree webpage](https://dee-tree.github.io).
