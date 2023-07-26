@@ -1,0 +1,15 @@
+@import './scss/_variables';
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: calc(1vw + 0.6em);
+  background-color: $dark;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
