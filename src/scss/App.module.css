@@ -6,8 +6,6 @@
 .container {
   height: 100vh;
   margin: 0 10%;
-  display: flex;
-  flex-direction: column;
 }
 
 .logo {
@@ -17,7 +15,6 @@
 }
 
 .hiText {
-  flex: 1 0 auto;
   color: #FFF;
   font-size: calc(1vw + 3em);
   font-family: "Space Grotesk", sans-serif;
@@ -28,40 +25,28 @@
   color: #FFCC00;
 }
 
-.bottomMenuEmptyContainer {
-  margin-left: 40%;
-}
-@media (max-width: 930px) {
-  .bottomMenuEmptyContainer {
-    margin-left: 10%;
-  }
-}
-@media (max-width: 775px) {
-  .bottomMenuEmptyContainer {
-    margin-left: 0;
-  }
-}
-
-.bottomMenuBlock {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 775px) {
-  .bottomMenuBlock {
-    flex-direction: column;
-  }
-}
-
 .arrowDown {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
   height: calc(1vw + 5rem);
   min-width: 80px;
-  margin: 20px 40px;
+  margin: 20px 0;
 }
 
 .bottomMenuButtons {
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 450px) {
+  .bottomMenuButtons {
+    left: 10%;
+  }
 }
 .bottomMenuButtons button {
   border: none;
@@ -86,6 +71,21 @@
 .bottomMenuButtons .menuButtonArea {
   display: flex;
   flex-direction: column;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions {
+  background-color: #E5E5E5;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin: 20px 20px 0 20px;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions li {
+  color: #232323;
+  list-style: none;
+  padding: 8px 8px;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions li:hover {
+  color: #FFCC00;
 }
 .bottomMenuButtons .menuButton {
   display: flex;
