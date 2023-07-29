@@ -55,6 +55,7 @@
   margin: 20px;
   padding: 0 30px;
   height: 4em;
+  transition: 0s box-shadow, transform;
 }
 .bottomMenuButtons button h2 {
   color: #232323;
@@ -64,6 +65,7 @@
   font-size: calc(1vw + 0.6rem);
 }
 .bottomMenuButtons button:hover {
+  cursor: pointer;
   transform: scale(110%);
   transition: transform 0.5s ease-out;
   box-shadow: #FFCC00 0px 10px 20px -10px;
@@ -83,9 +85,11 @@
   color: #232323;
   list-style: none;
   padding: 8px 8px;
+  transition: 0s color;
 }
 .bottomMenuButtons .menuButtonArea .menuOptions li:hover {
   color: #FFCC00;
+  transition-delay: 1ms;
 }
 .bottomMenuButtons .menuButton {
   display: flex;
@@ -98,6 +102,10 @@
   width: calc(1vw + 1em);
   height: calc(1vw + 1em);
   margin-left: 20px;
+}
+
+.parallax div {
+  position: static !important;
 }
 
 /*# sourceMappingURL=App.module.css.map */
