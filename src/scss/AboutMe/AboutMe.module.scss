@@ -13,3 +13,41 @@
     white-space: nowrap;
   }
 }
+
+.header {
+  font-size: calc(1vw + 1.2em);
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+}
+
+.activityGallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.activityCard {
+  background-color: $purple;
+  border-radius: $rounded-border-radius;
+  //height: calc(1vw + 3em);
+  max-height: 100px;
+  margin-right: 20px;
+
+  p {
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background-color: $yellow;
+    transform: scale(110%);
+    transition: transform 0.5s ease-out;
+    box-shadow: $yellow 0px 10px 20px -10px;
+  }
+}

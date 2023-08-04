@@ -4,8 +4,7 @@ import { BottomMenu } from './components';
 import styles from './scss/App.module.scss';
 import { MainLayout } from './layouts';
 
-// TODO - favicon
-//      - burgerMenu icon animation
+// TODO - burgerMenu icon animation
 //      - gradient, while moving to another section
 
 export const App = () => {

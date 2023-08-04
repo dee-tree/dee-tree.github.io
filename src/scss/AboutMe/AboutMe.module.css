@@ -11,4 +11,39 @@
   white-space: nowrap;
 }
 
+.header {
+  font-size: calc(1vw + 1.2em);
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+
+.activityGallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.activityCard {
+  background-color: #666699;
+  border-radius: 30px;
+  max-height: 100px;
+  margin-right: 20px;
+}
+.activityCard p {
+  font-weight: 300;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  white-space: nowrap;
+}
+.activityCard:hover {
+  background-color: #FFCC00;
+  transform: scale(110%);
+  transition: transform 0.5s ease-out;
+  box-shadow: #FFCC00 0px 10px 20px -10px;
+}
+
 /*# sourceMappingURL=AboutMe.module.css.map */

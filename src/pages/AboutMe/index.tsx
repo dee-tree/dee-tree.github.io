@@ -3,6 +3,8 @@ import { animated, useScroll } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 import { scroller } from 'react-scroll';
 
+import { ActivityAreasGallery } from '../../components';
+
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 
 export const AboutMe = () => {
@@ -26,7 +28,6 @@ export const AboutMe = () => {
         duration: 1500,
         smooth: true,
       });
-      console.log('scrolled')
     }
   }, [inView]);
 
@@ -40,6 +41,10 @@ export const AboutMe = () => {
             }}
         >About Me About Me About Me About Me About Me
         </animated.h2>
+        <h3 className={styles.header}>
+          Activity areas
+        </h3>
+        <ActivityAreasGallery />
       </section>
   );
 };
