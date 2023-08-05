@@ -1,9 +1,21 @@
 .root {
-  height: 100vh;
+  height: 200vh;
   overflow: hidden;
 }
-.root h2 {
+.root p {
+  text-align: center;
+  font-size: calc(1vw + 1em);
+  font-weight: 300;
+  white-space: nowrap;
   color: #666699;
+  font-style: italic;
+  margin: 15px 0;
+}
+.root p:hover {
+  font-weight: 700;
+}
+.root h2 {
+  color: #FFCC00;
   font-weight: 300;
   font-style: italic;
   text-transform: uppercase;

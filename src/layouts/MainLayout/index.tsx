@@ -7,7 +7,7 @@ export const MainLayout = () => {
       <div style={{scrollBehavior: 'smooth'}}>
         <LandingPage />
         <AboutMe />
-        <LandingPage />
+        {/*<LandingPage />*/}
       </div>
   )
 };

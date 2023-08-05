@@ -3,8 +3,6 @@ import { animated, useScroll } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 import { scroller } from 'react-scroll';
 
-import { ActivityAreasGallery } from '../../components';
-
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 
 export const AboutMe = () => {
@@ -31,20 +29,45 @@ export const AboutMe = () => {
     }
   }, [inView]);
 
-  const translateVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
+  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
+  const translateSkillsVal = scrollVal > prevScrollVal ? (scrollVal * 10) : -(scrollVal * 10);
 
   return (
       <section ref={ref} id='about' className={styles.root}>
         <animated.h2
             style={{
-              transform: `translate(${translateVal}%, 0)`,
+              transform: `translate(${translateHeaderVal}%, 0)`,
             }}
-        >About Me About Me About Me About Me About Me
+        >About Me <b>About Me</b> About Me About Me About Me
         </animated.h2>
         <h3 className={styles.header}>
           Activity areas
         </h3>
-        <ActivityAreasGallery />
+        {/*<ActivityAreasGallery />*/}
+        <animated.p
+            style={{
+              transform: `translate(${translateSkillsVal - 10}%, 0)`,
+            }}
+        >Android (Java, Kotlin) — Retrofit
+        </animated.p>
+        <animated.p
+            style={{
+              transform: `translate(${-translateSkillsVal + 10}%, 0)`,
+            }}
+        >Firebase — Python, C — Algorithms
+        </animated.p>
+        <animated.p
+            style={{
+              transform: `translate(${translateSkillsVal - 10}%, 0)`,
+            }}
+        >Git, Github — OOP principles
+        </animated.p>
+        <animated.p
+            style={{
+              transform: `translate(${-translateSkillsVal + 10}%, 0)`,
+            }}
+        >Design patterns — Research — Docker
+        </animated.p>
       </section>
   );
 };
