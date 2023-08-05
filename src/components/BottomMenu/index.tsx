@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ReactComponent as BurgerMenu } from './../../assets/burger_menu_icon.svg';
+import { ReactComponent as BurgerMenu } from '../../assets/burger-menu-icon.svg';
 import { ReactComponent as CloseIcon } from './../../assets/close.svg';
 
 import styles from '../../scss/BottomMenu/BottomMenu.module.scss';

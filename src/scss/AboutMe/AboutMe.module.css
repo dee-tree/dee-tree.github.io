@@ -19,10 +19,16 @@
 }
 
 .activityGallery {
+  margin: 30px 0;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  justify-content: space-between;
+}
+
+article {
+  position: absolute;
+  transition: all 1s;
 }
 
 .activityCard {
@@ -41,9 +47,46 @@
 }
 .activityCard:hover {
   background-color: #FFCC00;
-  transform: scale(110%);
-  transition: transform 0.5s ease-out;
   box-shadow: #FFCC00 0px 10px 20px -10px;
+}
+
+.prev {
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.active {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next {
+  left: 100%;
+  transform: translateX(calc(-100% - 2rem));
+  opacity: 0;
+  z-index: -1;
+}
+
+.arrow {
+  width: calc(0% + 3rem);
+  height: calc(0% + 3rem);
+  cursor: pointer;
+}
+
+.left {
+  left: -1rem;
+  margin-right: 10px;
+}
+
+.right {
+  right: -1rem;
+  margin-left: 10px;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 /*# sourceMappingURL=AboutMe.module.css.map */

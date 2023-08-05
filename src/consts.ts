@@ -11,7 +11,7 @@ export const activities = [
   'Firebase',
   'Python: basics',
   'C: basics',
-  'Algorithms and data structures',
+  'Algorithms, data structs',
   'Git, Github',
   'OOP principles',
   'Design patterns'
