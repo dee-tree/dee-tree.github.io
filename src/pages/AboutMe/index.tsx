@@ -3,6 +3,8 @@ import { animated, useScroll } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 import { scroller } from 'react-scroll';
 
+import { Biography } from '../../components';
+
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 
 export const AboutMe = () => {
@@ -40,34 +42,46 @@ export const AboutMe = () => {
             }}
         >About Me <b>About Me</b> About Me About Me About Me
         </animated.h2>
-        <h3 className={styles.header}>
-          Activity areas
-        </h3>
-        {/*<ActivityAreasGallery />*/}
-        <animated.p
-            style={{
-              transform: `translate(${translateSkillsVal - 10}%, 0)`,
-            }}
-        >Android (Java, Kotlin) — Retrofit
-        </animated.p>
-        <animated.p
-            style={{
-              transform: `translate(${-translateSkillsVal + 10}%, 0)`,
-            }}
-        >Firebase — Python, C — Algorithms
-        </animated.p>
-        <animated.p
-            style={{
-              transform: `translate(${translateSkillsVal - 10}%, 0)`,
-            }}
-        >Git, Github — OOP principles
-        </animated.p>
-        <animated.p
-            style={{
-              transform: `translate(${-translateSkillsVal + 10}%, 0)`,
-            }}
-        >Design patterns — Research — Docker
-        </animated.p>
+
+        <div className={styles.activityAreasBlock}>
+          <h3 className={styles.header}>
+            Activity areas
+          </h3>
+
+          {/*<ActivityAreasGallery />*/}
+
+          <animated.p
+              className={styles.skills}
+              style={{
+                transform: `translate(${translateSkillsVal - 10}%, 0)`,
+              }}
+          >Android (Java, Kotlin) — Retrofit
+          </animated.p>
+          <animated.p
+              className={styles.skills}
+              style={{
+                transform: `translate(${-translateSkillsVal + 10}%, 0)`,
+              }}
+          >Firebase — Python, C — Algorithms
+          </animated.p>
+          <animated.p
+              className={styles.skills}
+              style={{
+                transform: `translate(${translateSkillsVal - 10}%, 0)`,
+              }}
+          >Git, Github — OOP principles
+          </animated.p>
+          <animated.p
+              className={styles.skills}
+              style={{
+                transform: `translate(${-translateSkillsVal + 10}%, 0)`,
+              }}
+          >Design patterns — Research — Docker
+          </animated.p>
+        </div>
+
+        <Biography />
+
       </section>
   );
 };

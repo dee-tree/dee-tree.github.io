@@ -23,6 +23,10 @@
   white-space: nowrap;
 }
 
+.activityAreasBlock {
+  margin-bottom: 80px;
+}
+
 .header {
   font-size: calc(1vw + 1.2em);
   font-weight: 400;
@@ -101,4 +105,73 @@ article {
   cursor: default;
 }
 
-/*# sourceMappingURL=AboutMe.module.css.map */
+.root {
+  height: 100vh;
+}
+
+.logo {
+  width: calc(1vw + 3em);
+  height: calc(1vw + 3em);
+  margin: 40px 0;
+}
+
+.hiText {
+  color: #FFF;
+  font-size: calc(1vw + 3em);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
+.arrowDown {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: calc(1vw + 5rem);
+  min-width: 80px;
+  margin: 20px 0;
+}
+
+.bioBlock {
+  margin-bottom: 80px;
+}
+
+.bioContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bioContainer img {
+  width: calc(1vw + 7em);
+  height: calc(1vw + 7em);
+  margin-right: calc(1vw + 1.5em);
+}
+.bioContainer p {
+  font-size: calc(1vw + 0.8em);
+  font-weight: 300;
+  color: #FFF;
+  margin: 15px 0 15px calc(1vw + 1.5em);
+  text-align: start;
+}
+
+@media (max-width: 550px) {
+  .bioContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bioContainer p {
+    margin: 15px 0 0 0;
+  }
+  .bioContainer img {
+    margin: 15px 0;
+  }
+}
+
+/*# sourceMappingURL=Biography.module.css.map */
