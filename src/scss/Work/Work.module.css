@@ -1,0 +1,40 @@
+.root {
+  height: 100vh;
+  overflow: hidden;
+}
+.root h2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+.root .header {
+  font-size: calc(1vw + 1.2em);
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+.root .workCaseHeader {
+  font-size: calc(1vw + 0.8em);
+  font-weight: 300;
+  color: #666699;
+  text-align: start;
+}
+.root p {
+  color: #FFF;
+  font-size: calc(1vw + 0.6em);
+  font-weight: 300;
+  font-style: italic;
+  text-align: start;
+}
+
+.scrollableContainer {
+  height: 50vh;
+  overflow-y: scroll;
+  margin: 20px;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=Work.module.css.map */

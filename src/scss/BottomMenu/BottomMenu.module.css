@@ -49,6 +49,7 @@
   margin: 20px 20px 0 20px;
 }
 .bottomMenuButtons .menuButtonArea .menuOptions li {
+  cursor: pointer;
   color: #232323;
   list-style: none;
   padding: 8px 8px 8px 20px;

@@ -4,6 +4,7 @@ import { ReactComponent as BurgerMenu } from '../../assets/burger-menu-icon.svg'
 import { ReactComponent as CloseIcon } from './../../assets/close.svg';
 
 import styles from '../../scss/BottomMenu/BottomMenu.module.scss';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const BottomMenu = () => {
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -15,8 +16,12 @@ export const BottomMenu = () => {
           {
               isMenuOpened &&
               <ul className={styles.menuOptions}>
-                <li>About me</li>
-                <li>Work</li>
+                <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true}>
+                  <li>About me</li>
+                </ScrollLink>
+                <ScrollLink to='work' duration={1500} smooth={true} hashSpy={true}>
+                  <li>Work</li>
+                </ScrollLink>
                 <li>Blog</li>
                 <li>Contact</li>
               </ul>

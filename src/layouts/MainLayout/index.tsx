@@ -1,4 +1,4 @@
-import { AboutMe, LandingPage } from '../../pages';
+import { AboutMe, LandingPage, Work } from '../../pages';
 
 export const MainLayout = () => {
   // TODO - change url only - Work Case, Blog - navigate. Other cases - just scroll to section from menu.
@@ -7,7 +7,7 @@ export const MainLayout = () => {
       <div style={{scrollBehavior: 'smooth'}}>
         <LandingPage />
         <AboutMe />
-        {/*<LandingPage />*/}
+        <Work />
       </div>
   )
 };
