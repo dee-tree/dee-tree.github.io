@@ -136,6 +136,15 @@ article {
   height: calc(1vw + 5rem);
   min-width: 80px;
   margin: 20px 0;
+  animation: soft-animation 2s ease-in infinite alternate;
+}
+@keyframes soft-animation {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .bioBlock {
