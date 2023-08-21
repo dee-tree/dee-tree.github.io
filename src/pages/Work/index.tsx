@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { animated, useScroll } from '@react-spring/web';
 
 import styles from '../../scss/Work/Work.module.scss';
+import { workCases } from '../../consts';
+import { WorkCase } from '../../components';
 
 export const Work = () => {
   const [scrollVal, setScrollVal] = useState(0);
@@ -27,20 +29,8 @@ export const Work = () => {
         </animated.h2>
 
         <h3 className={styles.header}>Work Cases</h3>
-            <div>
-              <h4 className={styles.workCaseHeader}>Animal Zoo Mobile App</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor illum nostrum rerum velit
-                voluptatibus?
-                Eius fuga illo iure laudantium pariatur placeat, ut. Eos iure perspiciatis quis sed ullam vel.<br />
 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero maxime mollitia quasi sint sunt
-                veritatis?
-                Autem debitis earum, laborum quisquam quos tempora? Doloribus exercitationem facere laudantium minus
-                sequi
-                vero voluptas!
-              </p>
-            </div>
+        {workCases.map((c, idx) => <WorkCase {...c} key={idx} />)}
       </section>
   );
 };

@@ -13,7 +13,7 @@ export const App = () => {
         <div className={styles.container}>
           <Routes>
             <Route path='/' element={<MainLayout />} />
-            {/*TODO - WORK CASE, BLOG*/}
+            {/*TODO - BLOG*/}
           </Routes>
         </div>
         <BottomMenu />

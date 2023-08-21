@@ -107,6 +107,12 @@ article {
 
 .root {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamicBlock {
+  flex-basis: 60%;
 }
 
 .logo {
@@ -127,7 +133,7 @@ article {
 }
 
 .arrowDown {
-  display: inline-block;
+  flex-basis: 10%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

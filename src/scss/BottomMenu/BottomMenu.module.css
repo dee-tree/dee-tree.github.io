@@ -17,7 +17,7 @@
   margin: 20px;
   padding: 0 30px;
   height: 5em;
-  transition: 0s box-shadow, transform;
+  box-shadow: #333333 0px 10px 15px -10px;
 }
 @media (max-width: 820px) {
   .bottomMenuButtons button {
@@ -33,9 +33,9 @@
 }
 .bottomMenuButtons button:hover {
   cursor: pointer;
-  transform: scale(110%);
+  transform: scale(105%);
   transition: transform 0.5s ease-out;
-  box-shadow: #FFCC00 0px 10px 20px -10px;
+  box-shadow: #FFCC00 0 10px 20px -10px;
 }
 .bottomMenuButtons .menuButtonArea {
   display: flex;
@@ -43,10 +43,31 @@
 }
 .bottomMenuButtons .menuButtonArea .menuOptions {
   background-color: #E5E5E5;
-  opacity: 0.8;
+  opacity: 0.85;
   border-radius: 30px;
   padding: 8px 10px;
   margin: 20px 20px 0 20px;
+  animation: fading 1s linear alternate;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.65;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.85;
+  }
 }
 .bottomMenuButtons .menuButtonArea .menuOptions li {
   cursor: pointer;

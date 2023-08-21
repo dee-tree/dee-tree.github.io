@@ -7,11 +7,10 @@ import { Link as ScrollLink } from 'react-scroll';
 
 import styles from '../../scss/LandingPage/LandingPage.module.scss';
 
-// TODO - make Header for future Blog and Work Cases
-
 export const LandingPage = () => {
   return (
       <section className={styles.root}>
+        <div className={styles.dynamicBlock}>
         <Link to={'/'}><Logo className={styles.logo} /></Link>
 
         <h1 className={styles.hiText}>
@@ -32,8 +31,10 @@ export const LandingPage = () => {
           />
         </span>
         </h1>
+        </div>
 
-        <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true}>
+        {/*TODO - center ArrowDown and make clickable area not so wide */}
+        <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true} style={{display: 'inline-block'}}>
           <ArrowDown className={styles.arrowDown} />
         </ScrollLink>
       </section>
