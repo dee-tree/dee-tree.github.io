@@ -1,8 +1,20 @@
 @import './../_variables.scss';
 
 .root {
+  --swiper-theme-color: #232323;
+
   height: 500vh;
   overflow: hidden;
+
+  .carousel {
+    [class^='swiper-button-']::after {
+      font-size: calc(1vw + 0.8em);
+    }
+
+    [class^='swiper-button-'] {
+      width: calc(1vw + 2.5em);
+    }
+  }
 
   .workCaseBlock {
     padding: 20px 0;
@@ -32,12 +44,12 @@
   .workCaseHeader {
     font-size: calc(1vw + 0.8em);
     font-weight: 400;
-    color: $purple;
+    color: $light-yellow;
     text-align: start;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
-    transition: color 0.5s ease-out;
+    transition: color $medium-transition-dur ease-out;
 
     &:hover {
       color: $yellow;
@@ -55,8 +67,8 @@
   .workCaseImg {
     width: 100%;
     height: 100%;
-    //max-width: 260px;
-    //max-height: 260px;
+    //max-width: 100vw;
+    //max-height: 70vh;
     object-fit: contain;
     margin-top: 20px;
     margin-bottom: 0;

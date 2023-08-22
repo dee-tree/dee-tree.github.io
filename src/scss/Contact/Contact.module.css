@@ -1,0 +1,16 @@
+.root {
+  overflow: hidden;
+  height: 100vh;
+  background: #E5E5E5;
+  background: radial-gradient(20vw, #E5E5E5, #333333);
+}
+.root h2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=Contact.module.css.map */

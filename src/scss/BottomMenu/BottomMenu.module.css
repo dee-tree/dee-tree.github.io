@@ -1,4 +1,5 @@
 .bottomMenuButtons {
+  z-index: 1000;
   position: fixed;
   bottom: 20px;
   right: 10%;
@@ -74,12 +75,18 @@
   color: #232323;
   list-style: none;
   padding: 8px 8px 8px 20px;
-  transition: 0s color;
+  transition: 100ms color ease-out;
   font-size: calc(1vw + 0.4rem);
 }
 .bottomMenuButtons .menuButtonArea .menuOptions li:hover {
   color: #FFCC00;
-  transition-delay: 1ms;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions .disabledOption {
+  cursor: default;
+  color: #CCCCCC;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions .disabledOption:hover {
+  color: #CCCCCC;
 }
 .bottomMenuButtons .menuButton {
   display: flex;

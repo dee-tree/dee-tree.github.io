@@ -22,8 +22,10 @@ export const BottomMenu = () => {
                 <ScrollLink to='work' duration={1500} smooth={true} hashSpy={true}>
                   <li>Work</li>
                 </ScrollLink>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li className={styles.disabledOption}>Blog</li>
+                <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true}>
+                  <li>Contact</li>
+                </ScrollLink>
               </ul>
           }
           <button className={styles.menuButton} onClick={() => setMenuOpened((prevState) => !prevState)}>

@@ -27,27 +27,16 @@
   color: $yellow;
 }
 
-.arrowDown {
-  flex-basis: 10%;
-  position: relative;
+.arrowDownLink {
+  width: calc(1vw + 5rem);
   left: 50%;
   transform: translateX(-50%);
-  box-sizing: border-box;
-  cursor: pointer;
-
-  height: calc(1vw + 5rem);
-  min-width: 80px;
   margin: 20px 0;
+  min-width: 80px;
+  flex-basis: 10%;
+  position: relative;
+  cursor: pointer;
+}
 
-  animation: soft-animation 2s ease-in infinite alternate;
-
-  @keyframes soft-animation {
-    from {
-      transform: scale(0.8);
-    }
-
-    to {
-      transform: scale(1.2);
-    }
-  }
+.arrowDown {
 }

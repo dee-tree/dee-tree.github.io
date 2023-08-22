@@ -7,6 +7,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 import styles from '../../scss/LandingPage/LandingPage.module.scss';
 
+// TODO - arrow scroll up
 export const LandingPage = () => {
   return (
       <section className={styles.root}>
@@ -33,8 +34,7 @@ export const LandingPage = () => {
         </h1>
         </div>
 
-        {/*TODO - center ArrowDown and make clickable area not so wide */}
-        <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true} style={{display: 'inline-block'}}>
+        <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true} className={styles.arrowDownLink}>
           <ArrowDown className={styles.arrowDown} />
         </ScrollLink>
       </section>

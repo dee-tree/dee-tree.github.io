@@ -1,6 +1,7 @@
 @import './../_variables';
 
 .bottomMenuButtons {
+  z-index: 1000;
   position: fixed;
   bottom: 20px;
   right: 10%;
@@ -37,7 +38,7 @@
   button:hover {
     cursor: pointer;
     transform: scale(105%);
-    transition: transform 0.5s ease-out;
+    transition: transform $medium-transition-dur ease-out;
     box-shadow: $yellow 0 10px 20px -10px;
   }
 
@@ -80,12 +81,20 @@
         color: $black;
         list-style: none;
         padding: 8px 8px 8px 20px;
-        transition: 0s color;
+        transition: $fast-transition-dur color ease-out;
         font-size: calc(1vw + 0.4rem);
 
         &:hover {
           color: $yellow;
-          transition-delay: 1ms;
+        }
+      }
+
+      .disabledOption {
+        cursor: default;
+        color: $disabled-color;
+
+        &:hover {
+          color: $disabled-color;
         }
       }
 

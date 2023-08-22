@@ -1,20 +1,29 @@
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y, EffectCreative, Navigation, Pagination } from 'swiper/modules';
 
 import styles from '../../scss/Work/Work.module.scss';
 
-import { WorkCaseProps } from '../../types/WorkCaseProps';
 import { workCasesImages } from '../../consts';
 
-// TODO - carousel for images
+import { WorkCaseProps } from '../../types/WorkCaseProps';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// TODO - remove vh heights in roots
+// TODO - make mockups same sizes
 
 const boxVariant = {
   visible: { opacity: 1, x: 0, y: 0, transition: { duration: 1, ease: 'easeOut' } },
-  hidden: { opacity: 0, x: -500, y: 200 }
+  hidden: { opacity: 0, x: -200, y: 200 }
 };
 
-export const WorkCase = ({ title, description, image, link }: WorkCaseProps) => {
+export const WorkCase = ({ title, description, images, link }: WorkCaseProps) => {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.01, triggerOnce: true });
 
@@ -34,7 +43,30 @@ export const WorkCase = ({ title, description, image, link }: WorkCaseProps) => 
         <p>
           {description}
         </p>
-        <img className={styles.workCaseImg} src={workCasesImages[image]} alt='Work Case' />
+        <Swiper
+            className={styles.carousel}
+            grabCursor={true}
+            effect={'creative'}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }}
+            modules={[EffectCreative, Navigation, Pagination, A11y]}
+            navigation
+            pagination={{ clickable: true }}
+        >
+          {
+            images.map(
+                (image, idx) => <SwiperSlide key={idx}>
+                  <img className={styles.workCaseImg} src={workCasesImages[image]} alt='Work Case' />
+                </SwiperSlide>)
+          }
+        </Swiper>
       </motion.div>
   );
 };
