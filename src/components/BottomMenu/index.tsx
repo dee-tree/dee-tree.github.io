@@ -11,7 +11,9 @@ export const BottomMenu = () => {
 
   return (
       <div className={styles.bottomMenuButtons}>
-        <button><h2>Get in touch</h2></button>
+        <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true}>
+          <button><h2>Get in touch</h2></button>
+        </ScrollLink>
         <div className={styles.menuButtonArea}>
           {
               isMenuOpened &&

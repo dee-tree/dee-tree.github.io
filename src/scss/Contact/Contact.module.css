@@ -1,8 +1,8 @@
 .root {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  background: #E5E5E5;
-  background: radial-gradient(20vw, #E5E5E5, #333333);
 }
 .root h2 {
   color: #FFCC00;
@@ -11,6 +11,65 @@
   text-transform: uppercase;
   font-size: calc(1vw + 3em);
   white-space: nowrap;
+}
+.root .contactContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.root .contactBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 530px) {
+  .root .contactBlock {
+    flex-direction: column;
+  }
+}
+.root .contactBlock button {
+  border: none;
+  border-radius: 30px;
+  background-color: #E5E5E5;
+  margin: 20px;
+  padding: 0 30px;
+  height: 5em;
+  box-shadow: #333333 0px 10px 50px -10px;
+}
+@media (max-width: 820px) {
+  .root .contactBlock button {
+    height: 4em;
+  }
+}
+.root .contactBlock button h3 {
+  color: #232323;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: calc(1vw + 1.2em);
+}
+.root .contactBlock button a {
+  text-decoration: none;
+}
+.root .contactBlock button:hover {
+  cursor: pointer;
+  background-color: #EFCB86;
+  transition: background-color 0.5s ease-out;
+}
+.root .ctaText {
+  text-align: center;
+  color: #FFF;
+  font-size: calc(1vw + 2em);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  margin: 20px;
+}
+.root .contrastText {
+  color: #FFCC00;
 }
 
 /*# sourceMappingURL=Contact.module.css.map */

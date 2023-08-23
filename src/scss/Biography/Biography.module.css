@@ -4,7 +4,7 @@
 }
 .root .skills {
   text-align: center;
-  font-size: calc(1vw + 1em);
+  font-size: calc(1vw + 0.8em);
   font-weight: 300;
   white-space: nowrap;
   color: #EFCB86;
@@ -159,11 +159,12 @@ article {
   margin-right: calc(1vw + 1.5em);
 }
 .bioContainer p {
-  font-size: calc(1vw + 0.8em);
+  font-size: calc(1vw + 0.6em);
   font-weight: 300;
   color: #FFF;
   margin: 15px 0 15px calc(1vw + 1.5em);
   text-align: start;
+  line-height: 1.5;
 }
 
 @media (max-width: 550px) {

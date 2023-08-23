@@ -2,10 +2,9 @@
 
 .root {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-
-  background: #E5E5E5;
-  background: radial-gradient(20vw, #E5E5E5, #333333);
 
   h2 {
     color: $yellow;
@@ -14,5 +13,70 @@
     text-transform: uppercase;
     font-size: calc(1vw + 3em);
     white-space: nowrap;
+  }
+
+  .contactContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+
+  .contactBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    @media (max-width: 530px) {
+      flex-direction: column;
+    }
+
+    button {
+      border: none;
+      border-radius: $rounded-border-radius;
+      background-color: $light-gray;
+      margin: 20px;
+      padding: 0 30px;
+      height: 5em;
+      box-shadow: $box-shadow;
+
+      @media (max-width: 820px) {
+        height: 4em;
+      }
+
+      h3 {
+        color: $black;
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 300;
+        font-size: calc(1vw + 1.2em);
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: $light-yellow;
+      transition: background-color $medium-transition-dur ease-out;
+    }
+  }
+
+  .ctaText {
+    text-align: center;
+    color: $white;
+    font-size: calc(1vw + 2em);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    margin: 20px;
+  }
+
+  .contrastText {
+    color: $yellow;
   }
 }

@@ -18,6 +18,7 @@ export const Work = () => {
 
   const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
   // TODO - add mockup
+  // TODO - Work Case Page
 
   return (
       <section id='work' className={styles.root}>
