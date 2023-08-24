@@ -19,11 +19,10 @@ export const AboutMe = () => {
   const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
   const translateSkillsVal = scrollVal > prevScrollVal ? (scrollVal * 10) : -(scrollVal * 10);
 
-  // TODO - get rid of unused deps, e.g. Int. Observer
-
   return (
       <section id='about' className={styles.root}>
         <animated.h2
+            className={styles.animatedH2}
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}

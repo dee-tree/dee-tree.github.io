@@ -23,6 +23,7 @@ export const Work = () => {
   return (
       <section id='work' className={styles.root}>
         <animated.h2
+            className={styles.animatedH2}
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}

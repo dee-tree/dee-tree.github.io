@@ -1,3 +1,69 @@
+.container {
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.animatedH2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
+.scrollToTop {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+  width: calc(1vw + 1.5em);
+  height: calc(1vw + 1.5em);
+  margin: 8px;
+  bottom: 40px;
+  right: 5%;
+  color: #E5E5E5;
+  animation: fading 0.5s linear alternate;
+  transition: 100ms color ease-out;
+}
+@media (max-width: 450px) {
+  .scrollToTop {
+    top: 40px;
+    right: -3%;
+    transform: translate(-50%, -50%);
+  }
+}
+.scrollToTop:hover {
+  color: #EFCB86;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.65;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
 .bottomMenuButtons {
   z-index: 1000;
   position: fixed;
@@ -49,26 +115,6 @@
   padding: 8px 10px;
   margin: 20px 20px 0 20px;
   animation: fading 1s linear alternate;
-}
-@keyframes fading {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  70% {
-    opacity: 0.65;
-  }
-  90% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 0.85;
-  }
 }
 .bottomMenuButtons .menuButtonArea .menuOptions li {
   cursor: pointer;

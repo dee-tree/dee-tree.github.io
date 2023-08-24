@@ -1,8 +1,7 @@
-@import './../_variables.scss';
+@import './../_variables.scss', './../App.module';
 
 .root {
   height: 200vh;
-  overflow: hidden;
 
   .skills {
     text-align: center;
@@ -17,15 +16,6 @@
     &:hover {
       font-weight: 700;
     }
-  }
-
-  h2 {
-    color: $yellow;
-    font-weight: 300;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: calc(1vw + 3em);
-    white-space: nowrap;
   }
 }
 .activityAreasBlock {

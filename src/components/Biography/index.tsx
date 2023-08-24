@@ -2,6 +2,7 @@ import photo from './../../assets/photo.png';
 
 import styles from '../../scss/Biography/Biography.module.scss';
 
+// TODO [Dmitriy] - change bio
 export const Biography = () => {
   return (
       <div className={styles.bioBlock}>

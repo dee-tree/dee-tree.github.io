@@ -4,7 +4,6 @@ import { TypeAnimation } from 'react-type-animation';
 
 import styles from '../../scss/Contact/Contact.module.scss';
 
-// TODO - carry out all 'overflow' properties in root in scss modules to 1 place
 export const Contact = () => {
   const [scrollVal, setScrollVal] = useState(0);
   const [prevScrollVal, setPrevScrollVal] = useState(0);
@@ -18,10 +17,10 @@ export const Contact = () => {
 
   const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
 
-  // TODO - carry out all yellow h2
   return (
       <section id='contact' className={styles.root}>
         <animated.h2
+            className={styles.animatedH2}
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}

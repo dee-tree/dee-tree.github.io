@@ -1,19 +1,9 @@
-@import './../_variables.scss';
+@import './../_variables.scss', './../App.module';
 
 .root {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100vh;
-
-  h2 {
-    color: $yellow;
-    font-weight: 300;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: calc(1vw + 3em);
-    white-space: nowrap;
-  }
 
   .contactContainer {
     display: flex;
@@ -74,9 +64,5 @@
     font-family: "Space Grotesk", sans-serif;
     font-weight: 300;
     margin: 20px;
-  }
-
-  .contrastText {
-    color: $yellow;
   }
 }

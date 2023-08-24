@@ -3,4 +3,17 @@
   margin: 0 10%;
 }
 
+.animatedH2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
 /*# sourceMappingURL=App.module.css.map */

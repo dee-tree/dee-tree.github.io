@@ -10,13 +10,11 @@ import { workCasesImages } from '../../consts';
 
 import { WorkCaseProps } from '../../types/WorkCaseProps';
 
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // TODO - remove vh heights in roots
-// TODO - make mockups same sizes
 
 const boxVariant = {
   visible: { opacity: 1, x: 0, y: 0, transition: { duration: 1, ease: 'easeOut' } },
