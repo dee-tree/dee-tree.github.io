@@ -17,13 +17,13 @@ import 'swiper/css/pagination';
 // TODO - remove vh heights in roots
 
 const boxVariant = {
-  visible: { opacity: 1, x: 0, y: 0, transition: { duration: 1, ease: 'easeOut' } },
+  visible: { opacity: 1, x: 0, y: 0, transition: { duration: 1, ease: 'backInOut' } },
   hidden: { opacity: 0, x: -200, y: 200 }
 };
 
 export const WorkCase = ({ title, description, images, link }: WorkCaseProps) => {
   const control = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.01, triggerOnce: true });
+  const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   useEffect(() => {
     if (inView) {

@@ -1,18 +1,43 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 import { ReactComponent as BurgerMenu } from '../../assets/burger-menu-icon.svg';
 import { ReactComponent as CloseIcon } from './../../assets/close.svg';
 
 import styles from '../../scss/BottomMenu/BottomMenu.module.scss';
-import { Link as ScrollLink } from 'react-scroll';
+
+type PopupClick = MouseEvent;
 
 export const BottomMenu = () => {
+  const menuRef = useRef<HTMLButtonElement | null>(null);
   const [isMenuOpened, setMenuOpened] = useState(false);
+
+  useEffect(() => {
+    const clickOutsideHandler = (event: PopupClick) => {
+      if (menuRef.current && !event.composedPath().includes(menuRef.current as EventTarget)) {
+        setMenuOpened(false);
+      }
+    };
+
+    const escClickHandler = (e: KeyboardEvent) => {
+      if (e.code === 'Escape') {
+        setMenuOpened(false);
+      }
+    };
+
+    document.body.addEventListener('click', clickOutsideHandler);
+    document.body.addEventListener('keydown', escClickHandler);
+    return () => {
+      document.body.removeEventListener('click', clickOutsideHandler);
+      document.body.removeEventListener('keydown', escClickHandler);
+    }
+  }, []);
 
   return (
       <div className={styles.bottomMenuButtons}>
         <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true}>
-          <button><h2>Get in touch</h2></button>
+          <motion.button whileTap={{ scale: 0.8 }}><h2>Get in touch</h2></motion.button>
         </ScrollLink>
         <div className={styles.menuButtonArea}>
           {
@@ -30,14 +55,15 @@ export const BottomMenu = () => {
                 </ScrollLink>
               </ul>
           }
-          <button className={styles.menuButton} onClick={() => setMenuOpened((prevState) => !prevState)}>
+          <motion.button ref={menuRef} className={styles.menuButton} whileTap={{ scale: 0.8 }}
+                         onClick={() => setMenuOpened((prevState) => !prevState)}>
             <h2>Menu</h2>
             {
               !isMenuOpened
                   ? <BurgerMenu className={styles.burgerMenu} />
                   : <CloseIcon className={styles.burgerMenu} />
             }
-          </button>
+          </motion.button>
         </div>
       </div>
   )
