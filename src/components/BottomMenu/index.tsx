@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 
-import { ReactComponent as BurgerMenu } from '../../assets/burger-menu-icon.svg';
-import { ReactComponent as CloseIcon } from './../../assets/close.svg';
+import { ReactComponent as BurgerMenu } from '../../assets/img/burger-menu-icon.svg';
+import { ReactComponent as CloseIcon } from '../../assets/img/close.svg';
 
 import styles from '../../scss/BottomMenu/BottomMenu.module.scss';
 
@@ -37,7 +37,7 @@ export const BottomMenu = () => {
   return (
       <div className={styles.bottomMenuButtons}>
         <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true}>
-          <motion.button whileTap={{ scale: 0.8 }}><h2>Get in touch</h2></motion.button>
+          <motion.button whileTap={{ scale: 0.97 }}><h2>Get in touch</h2></motion.button>
         </ScrollLink>
         <div className={styles.menuButtonArea}>
           {
@@ -55,7 +55,7 @@ export const BottomMenu = () => {
                 </ScrollLink>
               </ul>
           }
-          <motion.button ref={menuRef} className={styles.menuButton} whileTap={{ scale: 0.8 }}
+          <motion.button ref={menuRef} className={styles.menuButton} whileTap={{ scale: 0.97 }}
                          onClick={() => setMenuOpened((prevState) => !prevState)}>
             <h2>Menu</h2>
             {

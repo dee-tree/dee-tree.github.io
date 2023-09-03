@@ -1,6 +1,6 @@
-@import './../_variables.scss';
-@import './../AboutMe/AboutMe.module.scss';
-@import './../LandingPage/LandingPage.module.scss';
+@import '../../variables';
+@import '../AboutMe.module';
+@import '../../LandingPage/LandingPage.module';
 
 .bioBlock {
   margin-bottom: 80px;

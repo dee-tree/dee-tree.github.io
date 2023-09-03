@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { animated, useScroll } from '@react-spring/web';
 
 import styles from '../../scss/Work/Work.module.scss';
-import { workCases } from '../../consts';
+import { workCases } from '../../assets/consts';
 import { WorkCase } from '../../components';
 
 export const Work = () => {

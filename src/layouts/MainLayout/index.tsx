@@ -11,7 +11,7 @@ export const MainLayout = () => {
   };
 
   const handleVisibleButton = () => {
-    setShowScrollToTop( window.pageYOffset > 300 )
+    setShowScrollToTop(window.pageYOffset > 300)
   }
 
   useEffect(() => {
@@ -23,12 +23,12 @@ export const MainLayout = () => {
   }, []);
 
   return (
-      <>
+      <main>
         {showScrollToTop && <ScrollToTop scroll={scrollToTopHandler} />}
         <LandingPage />
         <AboutMe />
         <Work />
         <Contact />
-      </>
+      </main>
   )
 };

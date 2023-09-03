@@ -6,7 +6,7 @@ import { A11y, EffectCreative, Navigation, Pagination } from 'swiper/modules';
 
 import styles from '../../scss/Work/Work.module.scss';
 
-import { workCasesImages } from '../../consts';
+import { workCasesImages } from '../../assets/consts';
 
 import { WorkCaseProps } from '../../types/WorkCaseProps';
 

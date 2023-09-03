@@ -33,13 +33,12 @@
       font-weight: 700;
       font-size: calc(1vw + 0.6rem);
     }
-  }
 
-  button:hover {
-    cursor: pointer;
-    transform: scale(105%);
-    transition: transform $medium-transition-dur ease-out;
-    box-shadow: $yellow 0 10px 20px -10px;
+    &:hover {
+      cursor: pointer;
+      transition: box-shadow $medium-transition-dur ease-out;
+      box-shadow: $yellow 0 10px 20px -10px;
+    }
   }
 
   .menuButtonArea {

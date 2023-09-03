@@ -2,8 +2,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
-import { ReactComponent as Logo } from './../../assets/logo.svg';
-import { ReactComponent as ArrowDown } from './../../assets/arrow-down.svg';
+import { ReactComponent as Logo } from '../../assets/img/logo.svg';
+import { ReactComponent as ArrowDown } from '../../assets/img/arrow-down.svg';
 
 import styles from '../../scss/LandingPage/LandingPage.module.scss';
 

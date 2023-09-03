@@ -1,7 +1,7 @@
-import { WorkCaseProps } from './types/WorkCaseProps';
-import grayMockup from './assets/gray-mockup.jpg';
-import gradientMockup from './assets/gradient-mockup.jpg';
-import pinkWhiteMockup from './assets/pink-white-mockup.jpg';
+import { WorkCaseProps } from '../types/WorkCaseProps';
+import grayMockup from './img/gray-mockup.jpg';
+import gradientMockup from './img/gradient-mockup.jpg';
+import pinkWhiteMockup from './img/pink-white-mockup.jpg';
 
 // keep track of the proportions (4500 x 3000) of the photos, so that they are not cropped
 
@@ -11,7 +11,7 @@ export const UrlMap = {
   Work: '/work',
 }
 
-// TODO [Dmitriy] - change activities
+// TODO - NOT USED - may be useful in the future
 export const activities = [
   'Android (Java, Kotlin)',
   'Retrofit',
@@ -24,6 +24,7 @@ export const activities = [
   'Design patterns'
 ];
 
+// TODO [Dmitriy] - add work case images
 export const workCasesImages: Record<string, string> = {
   grayMockup, gradientMockup, pinkWhiteMockup
 };
@@ -51,4 +52,12 @@ export const workCases: WorkCaseProps[] = [
     images: ['gradientMockup'],
     link: 'https://github.com/dee-tree',
   },
+];
+
+// TODO [Dmitriy] - change activities (in ActivityAreas) and subactivities
+export const activityAreas = [
+  { area: 'Android', subareas: ['Retrofit', 'Firebase'] },
+  { area: 'Kotlin', subareas: ['Ktor', 'TornadoFx'] },
+  { area: 'Java', subareas: ['Spring', 'JavaSMT', 'JavaFx'] },
+  { area: 'Research', subareas: ['Algo', 'SMT'] }
 ];

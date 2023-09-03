@@ -2,15 +2,15 @@ import { useState } from 'react';
 
 import { ActivityCard } from '../ActivityCard';
 
-import { activities } from '../../consts';
+import { activities } from '../../assets/consts';
 
-import { ReactComponent as ArrowRight } from './../../assets/right-arrow-icon.svg';
-import { ReactComponent as ArrowLeft } from './../../assets/left-arrow-icon.svg';
+import { ReactComponent as ArrowRight } from '../../assets/img/right-arrow-icon.svg';
+import { ReactComponent as ArrowLeft } from '../../assets/img/left-arrow-icon.svg';
 
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 
 export const ActivityAreasGallery = () => {
-  // TODO - carousel for future
+  // TODO - NOT USED - may be useful in the future
   const [index, setIndex] = useState(0);
   const [disabledLeft, setDisabledLeft] = useState(true);
   const [disabledRight, setDisabledRight] = useState(false);

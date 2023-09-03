@@ -4,3 +4,4 @@ export * from './ActivityCard';
 export * from './Biography';
 export * from './WorkCase';
 export * from './ScrollToTop';
+export * from './ActivityAreas';

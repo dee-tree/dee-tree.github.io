@@ -1,6 +1,6 @@
-import photo from './../../assets/photo.png';
+import photo from '../../assets/img/photo.png';
 
-import styles from '../../scss/Biography/Biography.module.scss';
+import styles from '../../scss/AboutMe/Biography/Biography.module.scss';
 
 // TODO [Dmitriy] - change bio
 export const Biography = () => {

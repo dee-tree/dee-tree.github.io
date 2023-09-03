@@ -28,8 +28,8 @@ export const Contact = () => {
         </animated.h2>
 
         <div className={styles.contactContainer}>
-        <p className={styles.ctaText}>Just hit me up<br/> to make your project<br/>
-          <span className={styles.contrastText}>
+          <p className={styles.ctaText}>Just hit me up<br /> to make your project<br />
+            <span className={styles.contrastText}>
           <TypeAnimation
               sequence={[
                 ' smart.',
@@ -43,12 +43,14 @@ export const Contact = () => {
               repeat={Infinity}
           />
           </span>
-        </p>
+          </p>
 
-        <div className={styles.contactBlock}>
-          <button onClick={() => navigator.clipboard.writeText('codemitry@gmail.com')}><a href='mailto:codemitry@gmail.com'><h3>Email</h3></a></button>
-          <button><a href='https://github.com/dee-tree'><h3>Github</h3></a></button>
-        </div>
+          <div className={styles.contactBlock}>
+            <button className={styles.classicButton}
+                    onClick={() => navigator.clipboard.writeText('codemitry@gmail.com')}><a
+                href='mailto:codemitry@gmail.com'><h3>Email</h3></a></button>
+            <button className={styles.classicButton}><a href='https://github.com/dee-tree'><h3>Github</h3></a></button>
+          </div>
         </div>
       </section>
   );
