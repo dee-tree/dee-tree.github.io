@@ -19,8 +19,6 @@ export const Work = () => {
   });
 
   const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * speedOfHeaders) : scrollVal * speedOfHeaders;
-  // TODO - add mockup
-  // TODO - Work Case Page
 
   return (
       <section id='work' className={styles.root}>

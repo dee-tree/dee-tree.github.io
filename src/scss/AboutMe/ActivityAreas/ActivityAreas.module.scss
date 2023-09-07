@@ -25,16 +25,6 @@
           transition: color $medium-transition-dur ease-out;
         }
       }
-
-      @media (max-width: 550px) {
-        & {
-          height: 3.5em;
-        }
-
-        h3 {
-          font-size: calc(1vw + 0.65em);
-        }
-      }
     }
 
     .subArea {

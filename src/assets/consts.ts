@@ -39,7 +39,7 @@ export const workCases: WorkCaseProps[] = [
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
     images: ['grayMockup', 'gradientMockup', 'pinkWhiteMockup'],
-    link: 'https://github.com/dee-tree',
+    links: [/*github*/ 'https://github.com/dee-tree', /*playmarket*/ 'https://github.com/dee-tree'],
   },
   {
     id: '1',
@@ -47,7 +47,7 @@ export const workCases: WorkCaseProps[] = [
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
     images: ['pinkWhiteMockup', 'gradientMockup'],
-    link: 'https://github.com/dee-tree',
+    links: ['https://github.com/dee-tree'],
   },
   {
     id: '2',
@@ -55,7 +55,7 @@ export const workCases: WorkCaseProps[] = [
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
     images: ['gradientMockup'],
-    link: 'https://github.com/dee-tree',
+    links: ['https://github.com/dee-tree'],
   },
 ];
 
