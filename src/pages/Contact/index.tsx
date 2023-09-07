@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { animated, useScroll } from '@react-spring/web';
 import { TypeAnimation } from 'react-type-animation';
 
+import { speedOfHeaders } from '../../assets/consts';
+
 import styles from '../../scss/Contact/Contact.module.scss';
 
 export const Contact = () => {
@@ -15,7 +17,7 @@ export const Contact = () => {
     }
   });
 
-  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
+  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * speedOfHeaders) : scrollVal * speedOfHeaders;
 
   return (
       <section id='contact' className={styles.root}>
@@ -24,7 +26,7 @@ export const Contact = () => {
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}
-        >in touch <b>Get in touch</b> Get in touch Get in touch
+        >in touch Get in touch <b>Get in touch</b> Get in touch
         </animated.h2>
 
         <div className={styles.contactContainer}>

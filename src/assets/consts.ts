@@ -11,6 +11,8 @@ export const UrlMap = {
   Work: '/work',
 }
 
+export const speedOfHeaders = 40;
+
 // TODO - NOT USED - may be useful in the future
 export const activities = [
   'Android (Java, Kotlin)',

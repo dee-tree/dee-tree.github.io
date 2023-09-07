@@ -20,6 +20,12 @@
     align-items: center;
     margin-top: 20px;
 
+    .classicButton {
+      h3 {
+        font-size: calc(1vw + 1em);
+      }
+    }
+
     @media (max-width: 530px) {
       flex-direction: column;
     }

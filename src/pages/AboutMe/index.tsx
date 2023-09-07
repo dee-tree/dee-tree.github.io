@@ -3,6 +3,8 @@ import { animated, useScroll } from '@react-spring/web';
 
 import { ActivityAreas, Biography } from '../../components';
 
+import { speedOfHeaders } from '../../assets/consts';
+
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 
 export const AboutMe = () => {
@@ -16,7 +18,7 @@ export const AboutMe = () => {
     }
   });
 
-  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
+  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * speedOfHeaders) : scrollVal * speedOfHeaders;
   const translateSkillsVal = scrollVal > prevScrollVal ? (scrollVal * 10) : -(scrollVal * 10);
 
   return (

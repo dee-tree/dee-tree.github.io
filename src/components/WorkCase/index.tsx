@@ -2,20 +2,18 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 import { A11y, EffectCreative, Navigation, Pagination } from 'swiper/modules';
-
-import styles from '../../scss/Work/Work.module.scss';
 
 import { workCasesImages } from '../../assets/consts';
 
 import { WorkCaseProps } from '../../types/WorkCaseProps';
 
+import styles from '../../scss/Work/Work.module.scss';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Link } from 'react-router-dom';
-
-// TODO - remove vh heights in roots
 
 const boxVariant = {
   visible: { opacity: 1, x: 0, y: 0, transition: { duration: 1, ease: 'backInOut' } },

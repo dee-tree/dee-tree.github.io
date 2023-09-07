@@ -3,7 +3,7 @@
 @import '../../LandingPage/LandingPage.module';
 
 .bioBlock {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .bioContainer {
@@ -24,6 +24,7 @@
   }
 
   code {
+    font-family: 'JetBrains Mono', monospace;
     font-size: calc(1vw + 0.6em);
     font-weight: 300;
     color: $white;

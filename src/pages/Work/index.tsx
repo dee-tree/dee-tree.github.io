@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { animated, useScroll } from '@react-spring/web';
 
-import styles from '../../scss/Work/Work.module.scss';
-import { workCases } from '../../assets/consts';
 import { WorkCase } from '../../components';
+
+import { speedOfHeaders, workCases } from '../../assets/consts';
+
+import styles from '../../scss/Work/Work.module.scss';
 
 export const Work = () => {
   const [scrollVal, setScrollVal] = useState(0);
@@ -16,7 +18,7 @@ export const Work = () => {
     }
   });
 
-  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * 10) : scrollVal * 10;
+  const translateHeaderVal = scrollVal > prevScrollVal ? -(scrollVal * speedOfHeaders) : scrollVal * speedOfHeaders;
   // TODO - add mockup
   // TODO - Work Case Page
 
