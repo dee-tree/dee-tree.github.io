@@ -4,8 +4,8 @@ import { ActivityCard } from '../ActivityCard';
 
 import { activities } from '../../assets/consts';
 
-import { ReactComponent as ArrowRight } from '../../assets/img/right-arrow-icon.svg';
-import { ReactComponent as ArrowLeft } from '../../assets/img/left-arrow-icon.svg';
+import { ReactComponent as ArrowRight } from '../../assets/img/carousel-arrow-right-icon.svg';
+import { ReactComponent as ArrowLeft } from '../../assets/img/carousel-arrow-left-icon.svg';
 
 import styles from '../../scss/AboutMe/AboutMe.module.scss';
 

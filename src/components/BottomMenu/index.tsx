@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 import { ReactComponent as BurgerMenu } from '../../assets/img/burger-menu-icon.svg';
-import { ReactComponent as CloseIcon } from '../../assets/img/close.svg';
+import { ReactComponent as CloseIcon } from '../../assets/img/close-icon.svg';
 
 import styles from '../../scss/BottomMenu/BottomMenu.module.scss';
 
@@ -43,14 +43,14 @@ export const BottomMenu = () => {
           {
               isMenuOpened &&
               <ul className={styles.menuOptions}>
-                <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true}>
+                <ScrollLink to='about' duration={1500} smooth={true} hashSpy={true} spyThrottle={500}>
                   <li>About me</li>
                 </ScrollLink>
-                <ScrollLink to='work' duration={1500} smooth={true} hashSpy={true}>
+                <ScrollLink to='work' duration={1500} smooth={true} hashSpy={true} spyThrottle={500} isDynamic={true}>
                   <li>Work</li>
                 </ScrollLink>
                 <li className={styles.disabledOption}>Blog</li>
-                <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true}>
+                <ScrollLink to='contact' duration={1500} smooth={true} hashSpy={true} spyThrottle={500}>
                   <li>Contact</li>
                 </ScrollLink>
               </ul>

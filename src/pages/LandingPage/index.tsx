@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 import { ReactComponent as Logo } from '../../assets/img/logo.svg';
-import { ReactComponent as ArrowDown } from '../../assets/img/arrow-down.svg';
+import { ReactComponent as ArrowDown } from '../../assets/img/arrow-down-icon.svg';
 
 import styles from '../../scss/LandingPage/LandingPage.module.scss';
 
@@ -20,6 +20,8 @@ export const LandingPage = () => {
           <TypeAnimation
               sequence={[
                 ' developer.',
+                1000,
+                ' engineer.',
                 1000,
                 ' researcher.',
                 1000,

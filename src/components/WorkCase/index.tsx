@@ -13,6 +13,7 @@ import { WorkCaseProps } from '../../types/WorkCaseProps';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 
 // TODO - remove vh heights in roots
 
@@ -21,7 +22,7 @@ const boxVariant = {
   hidden: { opacity: 0, x: -200, y: 200 }
 };
 
-export const WorkCase = ({ title, description, images, link }: WorkCaseProps) => {
+export const WorkCase = ({ id, title, description, images }: WorkCaseProps) => {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
@@ -35,9 +36,9 @@ export const WorkCase = ({ title, description, images, link }: WorkCaseProps) =>
 
   return (
       <motion.div className={styles.workCaseBlock} ref={ref} variants={boxVariant} initial='hidden' animate={control}>
-        <a target='_blank' rel='noopener noreferrer' className={styles.workCaseLink} href={link}>
+        <Link to={`/case/${id}`} className={styles.workCaseLink}>
           <h4 className={styles.workCaseHeader}>{title}</h4>
-        </a>
+        </Link>
         <p>
           {description}
         </p>

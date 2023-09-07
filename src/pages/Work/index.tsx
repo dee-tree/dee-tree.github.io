@@ -32,7 +32,7 @@ export const Work = () => {
 
         <h3 className={styles.header}>Work Cases</h3>
 
-        {workCases.map((c, idx) => <WorkCase {...c} key={idx} />)}
+        {workCases.map((c) => <WorkCase {...c} key={c.id} />)}
       </section>
   );
 };

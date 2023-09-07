@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import { AboutMe, Contact, LandingPage, Work } from '../../pages';
-import { ScrollToTop } from '../../components';
+import { BottomMenu, ScrollToTop } from '../../components';
+import styles from '../../scss/App.module.scss';
 
 export const MainLayout = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -23,12 +24,13 @@ export const MainLayout = () => {
   }, []);
 
   return (
-      <main>
+      <main className={styles.container}>
         {showScrollToTop && <ScrollToTop scroll={scrollToTopHandler} />}
         <LandingPage />
         <AboutMe />
         <Work />
         <Contact />
+        <BottomMenu />
       </main>
   )
 };

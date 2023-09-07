@@ -32,6 +32,7 @@ export const workCasesImages: Record<string, string> = {
 // TODO [Dmitriy] - change work cases
 export const workCases: WorkCaseProps[] = [
   {
+    id: '0',
     title: 'Animal Zoo Mobile App — 2019',
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
@@ -39,6 +40,7 @@ export const workCases: WorkCaseProps[] = [
     link: 'https://github.com/dee-tree',
   },
   {
+    id: '1',
     title: 'We Days — 2022',
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
@@ -46,6 +48,7 @@ export const workCases: WorkCaseProps[] = [
     link: 'https://github.com/dee-tree',
   },
   {
+    id: '2',
     title: 'KSMT — 2023',
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid, assumenda cum ea ex hic illo 
                   labore, laborum neque non omnis perferendis provident quibusdam quidem sapiente voluptatum! Aut, dolore.`,
@@ -56,8 +59,41 @@ export const workCases: WorkCaseProps[] = [
 
 // TODO [Dmitriy] - change activities (in ActivityAreas) and subactivities
 export const activityAreas = [
-  { area: 'Android', subareas: ['Retrofit', 'Firebase'] },
-  { area: 'Kotlin', subareas: ['Ktor', 'TornadoFx'] },
-  { area: 'Java', subareas: ['Spring', 'JavaSMT', 'JavaFx'] },
-  { area: 'Research', subareas: ['Algo', 'SMT'] }
+  {
+    area: 'Kotlin/Java', subareas: [
+      'Kotlin/JVM',
+      'Kotlin/Multiplatform',
+      'Gradle',
+      'JNI',
+      'Java agent',
+      'Ktor',
+      'Coroutines',
+      'Java Executors',
+    ]
+  },
+  {
+    area: 'Android', subareas: [
+      'Android SDK',
+      'MVP / MVVM',
+      'Dagger2',
+      'Hilt',
+      'Coroutines',
+      'Firebase',
+      'Ktor',
+      'Retrofit',
+      'OkHttp',
+      'Jetpack Compose / XML',
+      'Android Jetpack',
+      'Glide',
+      'Gradle',
+    ]
+  },
+  {
+    area: 'Research', subareas: [
+      'Language tooling/features',
+      'Kotlin Coroutines profiler',
+      'Software verification',
+      'SMT solvers',
+    ]
+  }
 ];

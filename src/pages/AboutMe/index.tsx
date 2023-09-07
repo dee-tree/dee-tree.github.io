@@ -35,38 +35,9 @@ export const AboutMe = () => {
           </h3>
 
           <ActivityAreas />
-        {/*  <animated.p*/}
-        {/*      className={styles.skills}*/}
-        {/*      style={{*/}
-        {/*        transform: `translate(${translateSkillsVal - 10}%, 0)`,*/}
-        {/*      }}*/}
-        {/*  >Android (Java, Kotlin) — Retrofit*/}
-        {/*  </animated.p>*/}
-        {/*  <animated.p*/}
-        {/*      className={styles.skills}*/}
-        {/*      style={{*/}
-        {/*        transform: `translate(${-translateSkillsVal + 10}%, 0)`,*/}
-        {/*      }}*/}
-        {/*  >Firebase — Python, C — Algorithms*/}
-        {/*  </animated.p>*/}
-        {/*  <animated.p*/}
-        {/*      className={styles.skills}*/}
-        {/*      style={{*/}
-        {/*        transform: `translate(${translateSkillsVal - 10}%, 0)`,*/}
-        {/*      }}*/}
-        {/*  >Git, Github — OOP principles*/}
-        {/*  </animated.p>*/}
-        {/*  <animated.p*/}
-        {/*      className={styles.skills}*/}
-        {/*      style={{*/}
-        {/*        transform: `translate(${-translateSkillsVal + 10}%, 0)`,*/}
-        {/*      }}*/}
-        {/*  >Design patterns — Research — Docker*/}
-        {/*  </animated.p>*/}
         </div>
 
         <Biography />
-
       </section>
   );
 };
