@@ -12,13 +12,14 @@
     flex-direction: column;
     margin-bottom: 20px;
     height: 100%;
+    flex-grow: 1;
   }
 
   .contactBlock {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 
     .classicButton {
       h3 {
@@ -43,6 +44,21 @@
     font-size: calc(1vw + 2em);
     font-family: "Space Grotesk", sans-serif;
     font-weight: 300;
-    margin: 20px;
+    margin: 10px;
+  }
+
+  .madeByBlock {
+    flex-shrink: 0;
+    text-align: center;
+
+    p {
+      font-weight: 300;
+      font-size: calc(1vw + 0.45em);
+      color: $light-gray;
+    }
+
+    a {
+      color: $light-yellow;
+    }
   }
 }

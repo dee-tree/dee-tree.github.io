@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useNavigate, useParams } from 'react-router-dom';
+
+import { NotFound } from '../NotFound';
 
 import { workCases, workCasesImages } from '../../assets/consts';
 
@@ -25,6 +27,10 @@ export const WorkCase = () => {
   const onBackButtonHandler = () => {
     navigate(-1);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
       <main className={styles.container}>
@@ -70,11 +76,7 @@ export const WorkCase = () => {
                     }
                   </Swiper>
                 </>
-                :
-                <div className={styles.errorBlock}>
-                  <h2>Oops! Nothing found</h2>
-                  <button className={styles.classicButton} onClick={() => navigate('/')}><h3>Back Home</h3></button>
-                </div>
+                : <NotFound />
           }
         </section>
       </main>

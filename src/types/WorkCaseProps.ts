@@ -5,3 +5,5 @@ export interface WorkCaseProps {
   images: string[];
   links: string[];
 }
+
+// TODO - add fullDescription for Work Case page
