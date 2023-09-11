@@ -5,26 +5,7 @@ import pinkWhiteMockup from './img/pink-white-mockup.jpg';
 
 // keep track of the proportions (4500 x 3000) of the photos, so that they are not cropped
 
-export const UrlMap = {
-  AboutMe: '/about',
-  LandingPage: '/',
-  Work: '/work',
-}
-
 export const speedOfHeaders = 40;
-
-// TODO - NOT USED - may be useful in the future
-export const activities = [
-  'Android (Java, Kotlin)',
-  'Retrofit',
-  'Firebase',
-  'Python: basics',
-  'C: basics',
-  'Algorithms, data structs',
-  'Git, Github',
-  'OOP principles',
-  'Design patterns'
-];
 
 // TODO [Dmitriy] - add work case images
 export const workCasesImages: Record<string, string> = {

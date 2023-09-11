@@ -1,23 +1,5 @@
 @import './../_variables.scss', './../App.module';
 
-.root {
-  //height: 200vh;
-
-  .skills {
-    text-align: center;
-    font-size: calc(1vw + 0.8em);
-    font-weight: 300;
-    white-space: nowrap;
-    color: $light-yellow;
-    font-style: italic;
-    margin: 15px 0;
-    transition: $fast-transition-dur font-weight ease-out;
-
-    &:hover {
-      font-weight: 700;
-    }
-  }
-}
 .activityAreasBlock {
   margin-bottom: 50px;
 }
@@ -27,80 +9,4 @@
   font-weight: 400;
   color: $white;
   text-align: center;
-}
-
-.activityGallery {
-  margin: 30px 0;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-article {
-  position: absolute;
-  transition: all 1s;
-}
-
-.activityCard {
-  background-color: $light-yellow;
-  border-radius: $rounded-border-radius;
-  //height: calc(1vw + 3em);
-  max-height: 100px;
-  margin-right: 20px;
-
-  p {
-    font-weight: 300;
-    color: $white;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    white-space: nowrap;
-  }
-
-  &:hover {
-    background-color: $yellow;
-    box-shadow: $yellow 0 10px 20px -10px;
-  }
-}
-
-.prev {
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-}
-
-.active {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.next {
-  left: 100%;
-  transform: translateX(calc(-100% - 2rem));
-  opacity: 0;
-  z-index: -1;
-}
-
-.arrow {
-  width: calc(0% + 3rem);
-  height: calc(0% + 3rem);
-  cursor: pointer;
-}
-
-.left {
-  left: -1rem;
-  margin-right: 10px;
-}
-
-.right {
-  right: -1rem;
-  margin-left: 10px;
-}
-
-.disabled {
-  opacity: 0.3;
-  cursor: default;
 }

@@ -52,9 +52,8 @@ export const ActivityAreas = () => {
                       </div>
                     </ul>
                 }
-              </div>
-          )}
-
+              </div>)
+        }
       </div>
   );
 };
