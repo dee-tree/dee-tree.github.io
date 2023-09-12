@@ -27,7 +27,7 @@ export const Work = () => {
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}
-        >Work Work <b>Work</b> Work Work Work Work
+        >Work Work Work <b>Work</b> Work Work Work Work
         </animated.h2>
 
         <h3 className={styles.header}>Work Cases</h3>

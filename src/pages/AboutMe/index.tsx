@@ -28,7 +28,7 @@ export const AboutMe = () => {
             style={{
               transform: `translate(${translateHeaderVal}%, 0)`,
             }}
-        >About Me <b>About Me</b> About Me About Me About Me
+        >About Me About Me <b>About Me</b> About Me About Me
         </animated.h2>
 
         <div className={styles.activityAreasBlock}>

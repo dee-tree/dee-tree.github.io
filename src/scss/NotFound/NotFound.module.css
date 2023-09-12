@@ -116,41 +116,16 @@
     opacity: 0.85;
   }
 }
-.root {
-  --swiper-theme-color: #232323;
+.errorBlock {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.root .workCaseBlock {
-  padding: 20px 0;
-  margin-bottom: 30px;
-}
-.root .header {
+.errorBlock h2 {
   font-size: calc(1vw + 1.2em);
-  font-weight: 400;
-  color: #FFF;
-  text-align: center;
-}
-.root .workCaseLink {
-  text-decoration: none;
-}
-.root .workCaseHeader {
-  font-size: calc(1vw + 0.8em);
-  font-weight: 400;
-  color: #EFCB86;
-  text-align: start;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 20px;
-  transition: color 0.5s ease-out;
-}
-.root .workCaseHeader:hover {
   color: #FFCC00;
 }
-.root p {
-  color: #FFF;
-  font-size: calc(1vw + 0.6em);
-  font-weight: 300;
-  text-align: start;
-  margin: 20px 0;
-}
 
-/*# sourceMappingURL=Work.module.css.map */
+/*# sourceMappingURL=NotFound.module.css.map */

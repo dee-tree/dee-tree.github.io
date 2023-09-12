@@ -116,41 +116,70 @@
     opacity: 0.85;
   }
 }
-.root {
-  --swiper-theme-color: #232323;
+.areasBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.root .workCaseBlock {
-  padding: 20px 0;
-  margin-bottom: 30px;
+.areasBlock .areaPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.root .header {
-  font-size: calc(1vw + 1.2em);
-  font-weight: 400;
+.areasBlock .areaPopup .classicButton {
+  background-color: #EFCB86;
+}
+.areasBlock .areaPopup .classicButton:hover {
+  background-color: #FFCC00;
+  transition: background-color 0.5s ease-out;
+}
+.areasBlock .areaPopup .classicButton:hover h3 {
   color: #FFF;
-  text-align: center;
-}
-.root .workCaseLink {
-  text-decoration: none;
-}
-.root .workCaseHeader {
-  font-size: calc(1vw + 0.8em);
-  font-weight: 400;
-  color: #EFCB86;
-  text-align: start;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 20px;
   transition: color 0.5s ease-out;
 }
-.root .workCaseHeader:hover {
-  color: #FFCC00;
+.areasBlock .areaPopup .subArea {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 6rem;
+  background-color: #E5E5E5;
+  opacity: 0.85;
+  border-radius: 30px;
+  padding: 8px 10px;
+  margin: 0 20px 0 20px;
+  animation: fading 0.4s linear alternate;
 }
-.root p {
-  color: #FFF;
-  font-size: calc(1vw + 0.6em);
-  font-weight: 300;
-  text-align: start;
-  margin: 20px 0;
+.areasBlock .areaPopup .subArea .innerSubArea {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.areasBlock .areaPopup .subArea .innerSubArea::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 100px;
+}
+.areasBlock .areaPopup .subArea .innerSubArea::-webkit-scrollbar-track {
+  margin: 10px;
+  border-radius: 100px;
+  background-color: transparent;
+}
+.areasBlock .areaPopup .subArea .innerSubArea::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  background-color: #CCCCCC;
+}
+@media (max-width: 820px) {
+  .areasBlock .areaPopup .subArea {
+    top: 5rem;
+  }
+}
+.areasBlock .areaPopup .subArea li {
+  color: #232323;
+  list-style: none;
+  padding: 8px 8px 8px 20px;
+  font-size: calc(1vw + 0.4rem);
 }
 
-/*# sourceMappingURL=Work.module.css.map */
+/*# sourceMappingURL=ActivityAreas.module.css.map */
