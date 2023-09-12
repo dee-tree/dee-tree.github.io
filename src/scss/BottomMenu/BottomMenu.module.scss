@@ -1,0 +1,97 @@
+@import './../_variables', './../App.module';
+
+.bottomMenuButtons {
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
+
+  @media (max-width: 450px) {
+    left: 10%;
+  }
+
+  display: flex;
+  align-items: flex-end;
+
+  button {
+    border: none;
+    border-radius: $rounded-border-radius;
+    background-color: $light-gray;
+    margin: 20px;
+    padding: 0 30px;
+    height: 5em;
+    box-shadow: $box-shadow;
+
+    @media (max-width: 820px) {
+      height: 4em;
+    }
+
+    h2 {
+      color: $black;
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: calc(1vw + 0.6rem);
+    }
+
+    &:hover {
+      cursor: pointer;
+      transition: box-shadow $medium-transition-dur ease-out;
+      box-shadow: $yellow 0 10px 20px -10px;
+    }
+  }
+
+  .menuButtonArea {
+    display: flex;
+    flex-direction: column;
+
+    .menuOptions {
+      background-color: $light-gray;
+      opacity: $opacity;
+      border-radius: $rounded-border-radius;
+
+      padding: 8px 10px;
+      margin: 20px 20px 0 20px;
+
+      animation: fading 0.4s linear alternate;
+
+      li {
+        cursor: pointer;
+        color: $black;
+        list-style: none;
+        padding: 8px 8px 8px 20px;
+        transition: $fast-transition-dur color ease-out;
+        font-size: calc(1vw + 0.4rem);
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      .disabledOption {
+        cursor: default;
+        color: $disabled-color;
+
+        &:hover {
+          color: $disabled-color;
+        }
+      }
+
+    }
+
+  }
+
+  .menuButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burgerMenu {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(1vw + 1em);
+    height: calc(1vw + 1em);
+    margin-left: 20px;
+  }
+}

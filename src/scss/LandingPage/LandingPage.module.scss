@@ -1,0 +1,38 @@
+@import './../_variables', './../App.module';
+
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamicBlock {
+  flex-basis: 60%;
+}
+
+.logo {
+  width: calc(1vw + 3em);
+  height: calc(1vw + 3em);
+  margin: 40px 0;
+}
+
+.hiText {
+  color: $white;
+  font-size: calc(1vw + 3em);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+.arrowDownLink {
+  width: calc(1vw + 5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+  min-width: 80px;
+  flex-basis: 10%;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrowDown {
+}

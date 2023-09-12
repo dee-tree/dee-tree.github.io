@@ -1,0 +1,30 @@
+.root {
+  height: 100vh;
+}
+
+.logo {
+  width: calc(1vw + 3em);
+  height: calc(1vw + 3em);
+  margin: 40px 0;
+}
+
+.hiText {
+  color: #FFF;
+  font-size: calc(1vw + 3em);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+.arrowDown {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: calc(1vw + 5rem);
+  min-width: 80px;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=LandingPage.module.css.map */

@@ -1,0 +1,150 @@
+.container {
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.animatedH2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
+.scrollToTop {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+  width: calc(1vw + 1.5em);
+  height: calc(1vw + 1.5em);
+  margin: 8px;
+  bottom: 40px;
+  right: 5%;
+  color: #E5E5E5;
+  animation: fading 0.5s linear alternate;
+  transition: 100ms color ease-out;
+}
+@media (max-width: 450px) {
+  .scrollToTop {
+    top: 40px;
+    right: -3%;
+    transform: translate(-50%, -50%);
+  }
+}
+.scrollToTop:hover {
+  color: #EFCB86;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.65;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+.bottomMenuButtons {
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 450px) {
+  .bottomMenuButtons {
+    left: 10%;
+  }
+}
+.bottomMenuButtons button {
+  border: none;
+  border-radius: 30px;
+  background-color: #E5E5E5;
+  margin: 20px;
+  padding: 0 30px;
+  height: 5em;
+  box-shadow: #333333 0px 10px 50px -10px;
+}
+@media (max-width: 820px) {
+  .bottomMenuButtons button {
+    height: 4em;
+  }
+}
+.bottomMenuButtons button h2 {
+  color: #232323;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: calc(1vw + 0.6rem);
+}
+.bottomMenuButtons button:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  transition: transform 0.5s ease-out;
+  box-shadow: #FFCC00 0 10px 20px -10px;
+}
+.bottomMenuButtons .menuButtonArea {
+  display: flex;
+  flex-direction: column;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions {
+  background-color: #E5E5E5;
+  opacity: 0.85;
+  border-radius: 30px;
+  padding: 8px 10px;
+  margin: 20px 20px 0 20px;
+  animation: fading 1s linear alternate;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions li {
+  cursor: pointer;
+  color: #232323;
+  list-style: none;
+  padding: 8px 8px 8px 20px;
+  transition: 100ms color ease-out;
+  font-size: calc(1vw + 0.4rem);
+}
+.bottomMenuButtons .menuButtonArea .menuOptions li:hover {
+  color: #FFCC00;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions .disabledOption {
+  cursor: default;
+  color: #CCCCCC;
+}
+.bottomMenuButtons .menuButtonArea .menuOptions .disabledOption:hover {
+  color: #CCCCCC;
+}
+.bottomMenuButtons .menuButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomMenuButtons .burgerMenu {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(1vw + 1em);
+  height: calc(1vw + 1em);
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=BottomMenu.module.css.map */

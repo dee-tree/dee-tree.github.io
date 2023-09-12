@@ -1,0 +1,118 @@
+.container {
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.animatedH2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
+.scrollToTop {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+  width: calc(1vw + 1.5em);
+  height: calc(1vw + 1.5em);
+  margin: 8px;
+  bottom: 40px;
+  right: 5%;
+  color: #E5E5E5;
+  animation: fading 0.5s linear alternate;
+  transition: 100ms color ease-out;
+}
+@media (max-width: 450px) {
+  .scrollToTop {
+    top: 40px;
+    right: -3%;
+    transform: translate(-50%, -50%);
+  }
+}
+.scrollToTop:hover {
+  color: #EFCB86;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.65;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+.root {
+  --swiper-theme-color: #232323;
+  height: 500vh;
+}
+.root .carousel [class^=swiper-button-]::after {
+  font-size: calc(1vw + 0.8em);
+}
+.root .carousel [class^=swiper-button-] {
+  width: calc(1vw + 2.5em);
+}
+.root .workCaseBlock {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+.root .header {
+  font-size: calc(1vw + 1.2em);
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+.root .workCaseLink {
+  text-decoration: none;
+}
+.root .workCaseHeader {
+  font-size: calc(1vw + 0.8em);
+  font-weight: 400;
+  color: #EFCB86;
+  text-align: start;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  transition: color 0.5s ease-out;
+}
+.root .workCaseHeader:hover {
+  color: #FFCC00;
+}
+.root p {
+  color: #FFF;
+  font-size: calc(1vw + 0.6em);
+  font-weight: 300;
+  text-align: start;
+  margin: 20px 0;
+}
+.root .workCaseImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=Work.module.css.map */

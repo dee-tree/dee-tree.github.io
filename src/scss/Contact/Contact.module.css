@@ -1,0 +1,129 @@
+.container {
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.root {
+  overflow: hidden;
+}
+
+.animatedH2 {
+  color: #FFCC00;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: calc(1vw + 3em);
+  white-space: nowrap;
+}
+
+.contrastText {
+  color: #FFCC00;
+}
+
+.scrollToTop {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+  width: calc(1vw + 1.5em);
+  height: calc(1vw + 1.5em);
+  margin: 8px;
+  bottom: 40px;
+  right: 5%;
+  color: #E5E5E5;
+  animation: fading 0.5s linear alternate;
+  transition: 100ms color ease-out;
+}
+@media (max-width: 450px) {
+  .scrollToTop {
+    top: 40px;
+    right: -3%;
+    transform: translate(-50%, -50%);
+  }
+}
+.scrollToTop:hover {
+  color: #EFCB86;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.65;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.root .contactContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.root .contactBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 530px) {
+  .root .contactBlock {
+    flex-direction: column;
+  }
+}
+.root .contactBlock button {
+  border: none;
+  border-radius: 30px;
+  background-color: #E5E5E5;
+  margin: 20px;
+  padding: 0 30px;
+  height: 5em;
+  box-shadow: #333333 0px 10px 50px -10px;
+}
+@media (max-width: 820px) {
+  .root .contactBlock button {
+    height: 4em;
+  }
+}
+.root .contactBlock button h3 {
+  color: #232323;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: calc(1vw + 1.2em);
+}
+.root .contactBlock button a {
+  text-decoration: none;
+}
+.root .contactBlock button:hover {
+  cursor: pointer;
+  background-color: #EFCB86;
+  transition: background-color 0.5s ease-out;
+}
+.root .ctaText {
+  text-align: center;
+  color: #FFF;
+  font-size: calc(1vw + 2em);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=Contact.module.css.map */
