@@ -61,7 +61,7 @@
         list-style: none;
         padding: 8px 8px 8px 20px;
         transition: $fast-transition-dur color ease-out;
-        font-size: calc(1vw + 0.4rem);
+        font-size: calc(1vw + 0.5rem);
 
         &:hover {
           color: $yellow;

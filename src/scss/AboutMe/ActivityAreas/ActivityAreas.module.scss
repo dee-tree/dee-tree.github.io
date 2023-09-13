@@ -25,6 +25,12 @@
           transition: color $medium-transition-dur ease-out;
         }
       }
+
+      @media (max-width: 550px) {
+        h3 {
+          font-size: calc(1vw + 0.8em);
+        }
+      }
     }
 
     .subArea {
@@ -42,6 +48,7 @@
 
         &::-webkit-scrollbar {
           width: 7px;
+          width: min(calc(1vw + 0.001em), 7px);
           border-radius: 100px;
         }
 
@@ -75,7 +82,8 @@
         color: $black;
         list-style: none;
         padding: 8px 8px 8px 20px;
-        font-size: calc(1vw + 0.4rem);
+        padding-left: min(calc(1vw + 0.5em) ,20px);
+        font-size: calc(1vw + 0.5rem);
       }
     }
 
